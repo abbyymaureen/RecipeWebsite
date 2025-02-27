@@ -1,0 +1,111 @@
+:root {
+    --md-sys-color-primary: #6750A4;
+    /* Primary color */
+    --md-sys-color-surface: #FFFFFF;
+    /* Background */
+    --md-sys-color-on-surface: #1C1B1F;
+    /* Text color */
+    --md-sys-color-outline: #DADCE0;
+    /* Border color */
+    --md-sys-shape-corner-full: 0.5rem;
+    /* Rounded corners */
+    --md-sys-elevation-level1: 0px 1px 3px rgba(0, 0, 0, 0.2),
+        0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the Material 3 Card */
+md-outlined-card {
+    display: block;
+    width: 20rem;
+    margin: 1rem auto;
+    border-radius: var(--md-sys-shape-corner-full);
+    border: 0.05rem solid var(--md-sys-color-outline);
+    box-shadow: var(--md-sys-elevation-level1);
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Placeholder Image */
+.card-image {
+    width: 100%;
+    height: 20rem;
+    /* Adjust this height as needed */
+    object-fit: cover;
+    /* Ensures the image fills the area without distortion */
+    object-position: center;
+    /* Centers the image */
+    display: block;
+}
+
+/* Content inside the card */
+.card-content {
+    padding: 0.9rem;
+}
+
+/* Typography */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.card-category {
+    font-size: 0.8rem;
+    color: #9E9E9E;
+}
+
+/* Navbar Style */
+.navbar {
+    width: 100%;
+    height: 5rem;
+    background-color: gray;
+}
+
+/* Footer Style */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E1E22;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.nav-item.active .icon-wrapper {
+    background-color: #D1C4E9;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.nav-item.active i {
+    color: black;
+}
